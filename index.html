@@ -3,27 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title">
+    <link rel="stylesheet" href="main.css" media="screen" title="no title">
   </head>
   <body>
 
-    <section id="search-section">
-      <form id="search-area" action="index.html" method="post">
-        <input id="input" type="input" name="name" placeholder="Enter search term">
-        <button id="submit-btn" type="button" name="button">Submit</button>
-      </form>
+<section id="main-container" class="container">
+    <section class="row" id="search-section">
+      <section class="col-md-4" id="search-section">
+        <a target="_blank" href='https://en.wikipedia.org/wiki/Special:Random'><img class="img-responsive>" alt="red button" src="img/wiki-pic.png"/></a>
+      </section>
+      <section class="col-md-4">
+        <form id="search-area" action="index.html" method="post">
+          <input id="input" type="input" placeholder="Enter search term" onkeypress="keyboardPress(event)">
+          <button id="submit-btn" type="button" name="button">Submit</button>
+        </form>
+      </section>
     </section>
 
-    <section id="search-section">
-
-        <a href='https://en.wikipedia.org/wiki/Special:Random' id="generate-btn" type="button" target="_blank" name="button">Generate Random Wiki Article</a ><br>
-
-    </section>
+<section class="row">
+  <section class="col-md-12">
+    <hr>
+  </section>
+</section>
 
     <section id="results-section">
       <ul id="ul">
-
       </ul>
     </section>
+  </section>
 
     <script type="text/javascript" src="main.js"></script>
   </body>
