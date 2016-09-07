@@ -1,3 +1,32 @@
+body {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  background: black;
+}
+
+#main-container {
+  padding-top: 3em;
+  width: 50em;
+  margin: 0 auto;
+}
+
+#results-section {
+}
+
+hr {
+  font-weight: 800;
+}
+
+img {
+  width: 120px;
+  height: 80px;
+}
+
+h1 {
+  color: white;
+}
+
 .li {
-  color: green;
+  color: white;
 }
